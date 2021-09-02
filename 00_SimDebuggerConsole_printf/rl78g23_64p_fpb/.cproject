@@ -137,6 +137,7 @@
 							<tool command="rl78-elf-objcopy" id="com.renesas.cdt.managedbuild.llvm.rl78.tool.Objcopy.242536766" name="Objcopy" superClass="com.renesas.cdt.managedbuild.llvm.rl78.tool.Objcopy">
 								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.renesas.cdt.managedbuild.llvm.core.option.objcopy.general.userDefinedOptions.1762943707" name="User defined options" superClass="com.renesas.cdt.managedbuild.llvm.core.option.objcopy.general.userDefinedOptions" useByScannerDiscovery="true" valueType="stringList">
 									<listOptionValue builtIn="false" value="-R .dtc_vectortable -R .dtc_controldata_*"/>
+									<listOptionValue builtIn="false" value="-R .ocd_traceram"/>
 								</option>
 							</tool>
 							<tool id="com.renesas.cdt.managedbuild.llvm.rl78.tool.archiver.2013986284" name="Archiver" superClass="com.renesas.cdt.managedbuild.llvm.rl78.tool.archiver"/>
@@ -149,7 +150,7 @@
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>
-						<entry excluding="smc_gen/general/r_cg_inthandler.c|FreeRTOS_Demo/Full_Demo/Standard_Demo_Tasks/flop.c|FreeRTOS_Demo/Full_Demo/Standard_Demo_Tasks/IntQueue.c|frtos_skeleton/main_task.c|FreeRTOS/Source/portable/MemMang/heap_5.c|FreeRTOS/Source/portable/MemMang/heap_3.c|FreeRTOS/Source/portable/MemMang/heap_2.c|FreeRTOS/Source/portable/MemMang/heap_1.c" flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="src"/>
+						<entry excluding="smc_gen/general/r_cg_inthandler.c|smc_gen/r_bsp/mcu/all/start.S|FreeRTOS/Source/portable/MemMang/heap_5.c|FreeRTOS/Source/portable/MemMang/heap_3.c|FreeRTOS/Source/portable/MemMang/heap_2.c|FreeRTOS/Source/portable/MemMang/heap_1.c" flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="src"/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>

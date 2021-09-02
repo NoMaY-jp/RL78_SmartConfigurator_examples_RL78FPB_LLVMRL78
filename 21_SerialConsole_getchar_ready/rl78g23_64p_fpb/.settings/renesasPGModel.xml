@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rl78LlvmProjectGenerationModel>
+    <fEndian>LITTLE</fEndian>
+    <stackLimit>true</stackLimit>
+    <codeGeneration>false</codeGeneration>
+    <newlib>false</newlib>
+    <pbuild>false</pbuild>
+</rl78LlvmProjectGenerationModel>

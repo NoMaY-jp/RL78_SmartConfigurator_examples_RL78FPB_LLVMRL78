@@ -120,7 +120,7 @@ void bsp_init_hardware(void);
 
 /* For convenience to use e2 studio's Visual Expression View.
  */
-#include "ide_helper.h"
+#include "IDE_Helper/ide_helper.h"
 
 /* For Renesas RL78 Simulator Debugging.
  */

@@ -21,7 +21,7 @@ extern "C" {
 //    to run the program. (This step includes launching Renesas
 //    Flash Programmer V3.08. Please install it before the step.)
 // 3. Open Terminal view of e2 studio then open terminal choosing
-//    'Serial Terminal' mode with COM9 and 2000000 baud rate.
+//    'Serial Terminal' mode with COM9 and 2000000 baud.
 
 void main_task(void *pvParameters)
 {

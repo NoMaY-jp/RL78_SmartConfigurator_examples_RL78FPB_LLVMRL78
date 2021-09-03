@@ -222,6 +222,7 @@
     <tool id="Pins" version="1.0.1.0">
         <pinItem allocation="8" comments="" direction="None" id="XT1" isUsedBySoftware="true" locked="false" status="0"/>
         <pinItem allocation="7" comments="" direction="None" id="XT2" isUsedBySoftware="true" locked="false" status="0"/>
+        <pinItem allocation="5" comments="" direction="None" id="TOOL0" isUsedBySoftware="true" locked="false" status="0"/>
         <pinItem allocation="35" comments="" direction="O" id="P52" isUsedBySoftware="true" locked="false" status="0"/>
         <pinItem allocation="36" comments="" direction="O" id="P53" isUsedBySoftware="true" locked="false" status="0"/>
         <pinItem allocation="9" comments="" direction="I" id="P137" isUsedBySoftware="true" locked="false" status="0"/>

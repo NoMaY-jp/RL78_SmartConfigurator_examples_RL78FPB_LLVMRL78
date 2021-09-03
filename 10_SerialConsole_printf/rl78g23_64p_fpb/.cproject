@@ -19,7 +19,7 @@
 				<option id="toolchain.enable" value="true"/>
 			</storageModule>
 			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
-				<configuration artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug" cleanCommand="rm -rf *.lst *.lis *.lpp *.map *.dmp *.msg" description="" errorParsers="org.eclipse.cdt.core.GASErrorParser;org.eclipse.cdt.core.GmakeErrorParser;org.eclipse.cdt.core.GLDErrorParser;org.eclipse.cdt.core.CWDLocator;org.eclipse.cdt.core.GCCErrorParser" id="com.renesas.cdt.managedbuild.llvm.rl78.configuration.debug.1074644973" name="HardwareDebug" parent="com.renesas.cdt.managedbuild.llvm.rl78.configuration.debug" postannouncebuildStep="" postbuildStep="@llvm-objdump --source &quot;${ProjName}.elf&quot; 1&gt;&quot;${ProjName}.dmp&quot; 2&gt;&quot;${ProjName}.msg&quot;" prebuildStep="@del ${ProjName}.srec">
+				<configuration artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug" cleanCommand="rm -rf *.lst *.lis *.lpp *.map *.dmp *.msg" description="" errorParsers="org.eclipse.cdt.core.GASErrorParser;org.eclipse.cdt.core.GmakeErrorParser;org.eclipse.cdt.core.GLDErrorParser;org.eclipse.cdt.core.CWDLocator;org.eclipse.cdt.core.GCCErrorParser" id="com.renesas.cdt.managedbuild.llvm.rl78.configuration.debug.1074644973" name="HardwareDebug" parent="com.renesas.cdt.managedbuild.llvm.rl78.configuration.debug" postannouncebuildStep="" postbuildStep="@llvm-objdump --source &quot;${ProjName}.elf&quot; 1&gt;&quot;${ProjName}.dmp&quot; 2&gt;&quot;${ProjName}.msg&quot;" prebuildStep="@if exist ${ProjName}.srec del ${ProjName}.srec">
 					<folderInfo id="com.renesas.cdt.managedbuild.llvm.rl78.configuration.debug.1074644973." name="/" resourcePath="">
 						<toolChain id="com.renesas.cdt.managedbuild.llvm.rl78.toolchain.debug.574027723" name="LLVM for RL78" superClass="com.renesas.cdt.managedbuild.llvm.rl78.toolchain.debug">
 							<option id="com.renesas.cdt.managedbuild.llvm.core.option.optimization.optimizationLevel.1973422713" name="Optimization Level" superClass="com.renesas.cdt.managedbuild.llvm.core.option.optimization.optimizationLevel" useByScannerDiscovery="true" value="com.renesas.cdt.managedbuild.llvm.core.option.optimization.optimizationLevel.debug" valueType="enumerated"/>
@@ -152,7 +152,7 @@
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>
-						<entry excluding="smc_gen/general/r_cg_inthandler.c|smc_gen/r_bsp/mcu/all/start.S|FreeRTOS/Source/portable/MemMang/heap_5.c|FreeRTOS/Source/portable/MemMang/heap_3.c|FreeRTOS/Source/portable/MemMang/heap_2.c|FreeRTOS/Source/portable/MemMang/heap_1.c" flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="src"/>
+						<entry excluding="smc_gen/general/r_cg_inthandler.c|smc_gen/r_bsp/mcu/all/start.S|frtos_skeleton/main_task.c|FreeRTOS/Source/portable/MemMang/heap_5.c|FreeRTOS/Source/portable/MemMang/heap_3.c|FreeRTOS/Source/portable/MemMang/heap_2.c|FreeRTOS/Source/portable/MemMang/heap_1.c" flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="src"/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>

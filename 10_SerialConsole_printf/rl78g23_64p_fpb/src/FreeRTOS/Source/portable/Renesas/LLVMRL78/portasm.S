@@ -50,7 +50,7 @@ PSW_ISP_BRK_INTERRUPT_PRIORITY_MINUS_1    =    ((3 - 1) << 1)
 ; restored by RETB instruction as a part of PSW.  Of course, FreeRTOS is
 ; designed carefully that such call of the yield handler inside a critical
 ; section doesn't make internal data structures corrupted.
-	.section   .lowtext
+	.section   .lowtext, "ax", @progbits
 _vSoftwareInterruptISR:		        ; This is for compatibility with RX ports.
 _vPortYield:
 ;	The following code can be optimized using set1 and clr1 instructions as follows.
@@ -85,7 +85,7 @@ _vPortYield:
 
 ; Starts the scheduler by restoring the context of the task that will execute
 ; first.
-	.section   .text
+	.section   .text, "ax", @progbits
 _vPortStartFirstTask:
 	CLRW	AX				        ; A workaround to prevent the debugger from
 	MOVW	!__STACK_ADDR_START - 4, AX ; messing up unwinding of the stack even if
@@ -98,7 +98,7 @@ _vPortStartFirstTask:
 
 ; FreeRTOS tick handler.  This is installed as the interval timer interrupt
 ; handler.
-	.section   .lowtext
+	.section   .lowtext, "ax", @progbits
 _vPortTickISR:
 	portSAVE_CONTEXT_EX TASK_CTX, SKIP_INT_PROLOG
 							        ; Save the context of the current task.
@@ -116,7 +116,7 @@ _vPortTickISR:
 
 
 ; Common interrupt handler.
-	.section   .lowtext
+	.section   .lowtext, "ax", @progbits
 _vPortCall_ISR_C_Handler_Using_FreeRTOS_API:
 	; Argument: BC is the target interrupt handler address.
 	portSAVE_CONTEXT_EX TASK_CTX, SKIP_INT_PROLOG
@@ -132,7 +132,7 @@ _vPortCall_ISR_C_Handler_Using_FreeRTOS_API:
 
 
 ; Common interrupt handler.
-	.section   .lowtext
+	.section   .lowtext, "ax", @progbits
 _vPortCall_ISR_C_Handler_Without_Using_FreeRTOS_API:
 	; Argument: BC is the target interrupt handler address.
 	portSAVE_CONTEXT_EX INT_REGS, SKIP_INT_PROLOG
@@ -147,8 +147,8 @@ _vPortCall_ISR_C_Handler_Without_Using_FreeRTOS_API:
 
 ; A workaround to prevent the symbols getting wrongly linked due to an
 ; LLVM-RL78 clang ld.lld's incorrect relocation address problem.
-	.section   .text
-	.byte      _vTaskSwitchContext
-	.byte      _uxSavedTaskStackPointer
+;;;;;;;;	.section   .text
+;;;;;;;;	.byte      LOW(_vTaskSwitchContext)
+;;;;;;;;	.byte      LOW(_uxSavedTaskStackPointer)
 
 	.end

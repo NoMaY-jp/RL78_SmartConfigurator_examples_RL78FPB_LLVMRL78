@@ -1,0 +1,23 @@
+[
+    {
+        "name": "LLVM-RL78",
+        "description": "(LLVM for Renesas RL78 10.0.0.202306)",
+        "toolchainFile": "${workspaceFolder}/cmake/renesas-rl78-clang-toolchain.cmake",
+        "cmakeSettings": {
+            "RENESAS_INTELLISENSE_HELPER_EXTRA_FLAGS":"-include\"${workspaceFolder}/.vscode/c_cpp_intellisense_helper.h\""
+        },
+        "environmentVariables": {
+            "Path": "C:/Renesas/GCCLLVM/LLVM-RL78/10.0.0.202306/bin;${env:Path}"
+        }
+    }
+    //Comments can be uses in the cmake-kits.json. (But the following comments will be removed later.)
+    //,
+    //{
+    //    "name": "LLVM-RL78_obsolete",
+    //    "description": "(LLVM for Renesas RL78 10.0.0.202306)",
+    //    "toolchainFile": "${workspaceFolder}/cmake/renesas-rl78-clang-toolchain.cmake",
+    //    "environmentVariables": {
+    //        "Path": "C:/Renesas/GCCLLVM/LLVM-RL78/10.0.0.202306/bin;${env:Path}"
+    //    }
+    //}
+]

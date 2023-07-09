@@ -1,0 +1,28 @@
+{
+    // https://code.visualstudio.com/docs/cpp/customize-default-settings-cpp#_updated-ccpppropertiesjson-syntax
+    // https://code.visualstudio.com/docs/cpp/c-cpp-properties-schema-reference
+    "configurations": [
+        {
+            "name": "Generic",
+            "configurationProvider": "ms-vscode.cmake-tools"
+        }
+        //The following comments will be removed later.
+        //,
+        //{
+        //    "name": "GNURX_obsolete",
+        //    "compilerPath": "C:/Renesas/GCCLLVM/LLVM-RL78/10.0.0.202306/bin/clang.exe",
+        //    "compilerArgs": [
+        //        "--target=rl78",
+        //        "-mcpu=s3"
+        //    ],
+        //    "compileCommands": "${workspaceFolder}/HardwareDebug/compile_commands.json",
+        //    "cStandard": "c99",
+        //    "cppStandard": "c++17",
+        //    "intelliSenseMode": "linux-clang-x86",
+        //    "forcedInclude": [
+        //        ".vscode/c_cpp_intellisense_helper.h"
+        //    ]
+        //}
+    ],
+    "version": 4
+}

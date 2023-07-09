@@ -44,7 +44,7 @@
     <intAttribute key="org.eclipse.cdt.debug.gdbjtag.core.delay" value="0"/>
     <booleanAttribute key="org.eclipse.cdt.debug.gdbjtag.core.doHalt" value="false"/>
     <booleanAttribute key="org.eclipse.cdt.debug.gdbjtag.core.doReset" value="false"/>
-    <stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.imageFileName" value="C:\Renesas\GitHubDesktop\work\RL78FPB\Examples_LLVMRL78\00_SimDebuggerConsole_printf\rl78g23_64p_fpb\HardwareDebug\SimDebugerConsole_printf.elf"/>
+    <stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.imageFileName" value="C:\Renesas\GitHubDesktop\work\RL78FPB\Examples_LLVMRL78\00_SimDebuggerConsole_printf\rl78g23_64p_fpb\HardwareDebug\SimDebuggerConsole_printf.elf"/>
     <stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.imageOffset" value=""/>
     <stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.initCommands" value=""/>
     <booleanAttribute key="org.eclipse.cdt.debug.gdbjtag.core.loadImage" value="true"/>
@@ -55,7 +55,7 @@
     <booleanAttribute key="org.eclipse.cdt.debug.gdbjtag.core.setResume" value="true"/>
     <booleanAttribute key="org.eclipse.cdt.debug.gdbjtag.core.setStopAt" value="true"/>
     <stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.stopAt" value="Processing_Before_Start_Kernel"/>
-    <stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.symbolsFileName" value="C:\Renesas\GitHubDesktop\work\RL78FPB\Examples_LLVMRL78\00_SimDebuggerConsole_printf\rl78g23_64p_fpb\HardwareDebug\SimDebugerConsole_printf.elf"/>
+    <stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.symbolsFileName" value="C:\Renesas\GitHubDesktop\work\RL78FPB\Examples_LLVMRL78\00_SimDebuggerConsole_printf\rl78g23_64p_fpb\HardwareDebug\SimDebuggerConsole_printf.elf"/>
     <stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.symbolsOffset" value=""/>
     <booleanAttribute key="org.eclipse.cdt.debug.gdbjtag.core.useFileForImage" value="false"/>
     <booleanAttribute key="org.eclipse.cdt.debug.gdbjtag.core.useFileForSymbols" value="false"/>
@@ -66,12 +66,12 @@
     <intAttribute key="org.eclipse.cdt.launch.ATTR_BUILD_BEFORE_LAUNCH_ATTR" value="1"/>
     <booleanAttribute key="org.eclipse.cdt.launch.DEBUGGER_STOP_AT_MAIN" value="true"/>
     <stringAttribute key="org.eclipse.cdt.launch.DEBUGGER_STOP_AT_MAIN_SYMBOL" value="Processing_Before_Start_Kernel"/>
-    <stringAttribute key="org.eclipse.cdt.launch.PROGRAM_NAME" value="HardwareDebug/SimDebugerConsole_printf.elf"/>
-    <stringAttribute key="org.eclipse.cdt.launch.PROJECT_ATTR" value="SimDebugerConsole_printf"/>
+    <stringAttribute key="org.eclipse.cdt.launch.PROGRAM_NAME" value="HardwareDebug/SimDebuggerConsole_printf.elf"/>
+    <stringAttribute key="org.eclipse.cdt.launch.PROJECT_ATTR" value="SimDebuggerConsole_printf"/>
     <booleanAttribute key="org.eclipse.cdt.launch.PROJECT_BUILD_CONFIG_AUTO_ATTR" value="false"/>
     <stringAttribute key="org.eclipse.cdt.launch.PROJECT_BUILD_CONFIG_ID_ATTR" value=""/>
     <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
-        <listEntry value="/SimDebugerConsole_printf"/>
+        <listEntry value="/SimDebuggerConsole_printf"/>
     </listAttribute>
     <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
         <listEntry value="4"/>

@@ -1,0 +1,15 @@
+{
+    // IMPORTANT:
+    // Please disable LLVM clangd language server and also Renesas VSCode build extension.
+
+    // https://github.com/clangd/vscode-clangd
+    "clangd.detectExtensionConflicts": true,
+
+    // https://code.visualstudio.com/docs/cpp/c-cpp-properties-schema-reference
+    "C_Cpp.intelliSenseEngine": "default",
+
+    // https://github.com/microsoft/vscode-cmake-tools/blob/main/docs/README.md#cmake-tools-for-visual-studio-code-documentation
+    // https://github.com/microsoft/vscode-cmake-tools/blob/main/docs/kits.md#kit-options
+    "cmake.configureOnOpen": false,
+    "cmake.buildDirectory": "${workspaceFolder}/HardwareDebug"
+}

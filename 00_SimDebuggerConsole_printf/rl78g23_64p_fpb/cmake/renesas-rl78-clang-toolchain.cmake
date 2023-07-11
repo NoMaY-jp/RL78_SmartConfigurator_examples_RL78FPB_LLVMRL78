@@ -91,19 +91,18 @@ set(CMAKE_EXE_LINKER_FLAGS_RELEASE "")
 # Modified by NoMaY for RL78 SmartConfigurator examples.
 
 function(post_build TARGET)
-    add_custom_target(${TARGET}.bin ALL 
-        DEPENDS ${TARGET}
+    add_custom_command(TARGET ${TARGET} POST_BUILD
 #        COMMAND ${CMAKE_OBJCOPY} -Obinary -R .dtc_vectortable -R .dtc_controldata_* -R .ocd_traceram ${TARGET}.elf ${TARGET}.bin
         COMMAND ${CMAKE_OBJCOPY} -Osrec -R .dtc_vectortable -R .dtc_controldata_* -R .ocd_traceram ${TARGET}.elf ${TARGET}.srec
         COMMAND ${CMAKE_OBJDUMP} -S ${TARGET}.elf > ${TARGET}.objdump 2> ${TARGET}.objdumperror
-        COMMAND ${CMAKE_SIZE_UTIL} --format=berkeley ${TARGET}.elf
-        COMMENT "Executing post build steps")
+        COMMAND ${CMAKE_SIZE_UTIL} --format=berkeley ${TARGET}.elf)
 endfunction()
 
 function(set_target_linker TARGET LINKER_SCRIPT)
     target_link_options(${TARGET} PRIVATE -T${LINKER_SCRIPT})
     target_link_options(${TARGET} PRIVATE -Wl,-Map=${TARGET}.map)
     set_target_properties(${TARGET} PROPERTIES SUFFIX ".elf") 
+    set_target_properties(${TARGET} PROPERTIES LINK_DEPENDS ${LINKER_SCRIPT})
 endfunction()
 
 macro(print_all_variables)
